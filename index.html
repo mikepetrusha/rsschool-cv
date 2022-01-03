@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a class="nav-link">Summary</a></li>
+                <li class="nav-item"><a class="nav-link">Skills</a></li>
+                <li class="nav-item"><a class="nav-link">Code</a></li>
+                <li class="nav-item"><a class="nav-link">Experience</a></li>
+                <li class="nav-item"><a class="nav-link">Education</a></li>
+                <li class="nav-item"><a class="nav-link">English</a></li>
+            </ul>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="section section-profile">
+                <img src="/assets/img/Все_что_вы_хотели_знать_о_программировании.png" alt="img"
+                    class="section-profile-logo">
+                <div class="section-profile-title">
+                    <h1>Petrusha Mihail</h1>
+                    <h3>Junior Front-End Developer</h3>
+                </div>
+            </section>
+            <section class="section">
+                <h2>Contacts</h2>
+                <ul class="section-list">
+                    <li>Gomel, Belarus</li>
+                    <li>Email: <a href="mailto:petrushamike@gmail.com" title="email">petrushamike@gmail.com</a></li>
+                    <li>Github: <a href="https://github.com/mikepetrusha" title="github">mikepetrusha</a></li>
+                    <li>Telegram: <a href="https://t.me/MPETRUSHA" title="github">@MPETRUSHA</a></li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>Summary</h2>
+                <p>
+                    Now I am a second year student at the Gomel State University in the physics and programming
+                    technology department. My goal is to learn everything new and exciting. My core strengths are in
+                    problem solving and fast learning.I want to get knowledge and skills that will be enough for
+                    employment in a company.
+                </p>
+            </section>
+            <section class="section">
+                <h2>Skills</h2>
+                <ul class="section-list">
+                    <li>HTML5, CSS3</li>
+                    <li>JavaScript (Fundamentals, ES6+, DOM, JSON, Asynchronous JavaScript)</li>
+                    <li>Version control: Git (remote service GitHub)</li>
+                    <li>C (basic knowledge),C# (basic knowledge)</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>Code example:</h2>
+                <p>Counting Duplicates(6 kyu) from CODEWARS: _Write a function that will return the count of
+                    distinct case-insensitive alphabetic characters and numeric digits that occur more than once
+                    in the input string. The input string can be assumed to contain only alphabets (both uppercase
+                    and lowercase) and numeric digits.</p>
+                <pre class="pre"><code>function duplicateCount(text){
+                    return text.toLowerCase().split('').filter(function(val, i, arr){
+                      return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i;
+                    }).length;
+                  }
+    }</code></pre>
+            </section>
+            <section class="section">
+                <h2>Experience</h2>
+                <ul class="section-list">
+                    <li>Examples of training / test projects can be viewed here - https://github.com/mikepetrusha</li>
+                </ul>
+            </section>
+
+            <section class="section section-education">
+                <h2>Education</h2>
+                <p>Gomel State University(Physics and Programming Technology department)</p>
+            </section>
+            <section class="section section-english">
+                <h2>English</h2>
+                <p>B1 - Pre-Intermediate</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div>© 2022 <a href="https://github.com/mikepetrusha" class="github nav-link">mikepetrusha</a></div>
+
+            <img src="/assets/img/rs_school_js.svg" alt="img2" class="rss">
+        </div>
+    </footer>
+
+</body>
+
+</html>
